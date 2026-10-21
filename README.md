@@ -21,24 +21,16 @@ The semantic model is built on a standard Star Schema design ($1 : *$) centered 
 ## 3. Core DAX Measures (`_Measures`)
 All key performance indicators were centralized in a dedicated measure table for clean maintenance and efficiency:
 
-```dax
-Total Revenue = SUM ( 'fact_orders'[Sales Amount] )
-
-Total Profit = SUM ( 'fact_orders'[Profit Amount] )
-
-Total Units Sold = SUM ( 'fact_orders'[Quantity] )
-
-Total Orders = DISTINCTCOUNT ( 'fact_orders'[Order ID] )
-
-Avg. Fulfillment Days = AVERAGE ( 'fact_orders'[Fulfillment Days] )
+* **Total Revenue:** `SUM ( 'fact_orders'[Sales Amount] )`
+* **Total Profit:** `SUM ( 'fact_orders'[Profit Amount] )`
+* **Total Units Sold:** `SUM ( 'fact_orders'[Quantity] )`
+* **Total Orders:** `DISTINCTCOUNT ( 'fact_orders'[Order ID] )`
+* **Avg. Fulfillment Days:** `AVERAGE ( 'fact_orders'[Fulfillment Days] )`
 
 ---
 
-## ** 4.  Dashboard Architecture & User Experience **
-Executive KPI Header: High-level cards across the top for immediate executive visibility into high-level performance metrics.
-
-Interactive Control Panel: Top-right Region dropdown slicer powered by dim_stores, enabling cross-filtering across all canvas visuals.
-
-Category Performance Breakdown: Horizontal bar chart comparing product performance to quickly highlight top-performing categories.
-
-Sales Velocity Trend: Time-series line chart tracking revenue growth month-over-month using standardized Month Year formatting.
+## 4. Dashboard Architecture & User Experience
+* **Executive KPI Header:** High-level cards across the top for immediate executive visibility into high-level performance metrics.
+* **Interactive Control Panel:** Top-right `Region` dropdown slicer powered by `dim_stores`, enabling cross-filtering across all canvas visuals.
+* **Category Performance Breakdown:** Horizontal bar chart comparing product performance to quickly highlight top-performing categories.
+* **Sales Velocity Trend:** Time-series line chart tracking revenue growth month-over-month using standardized `Month Year` formatting.
