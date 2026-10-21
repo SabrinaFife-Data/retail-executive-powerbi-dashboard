@@ -23,17 +23,18 @@ All key performance indicators were centralized in a dedicated measure table for
 
 ```dax
 Total Revenue = SUM ( 'fact_orders'[Sales Amount] )
-Total Profit = SUM ( 'fact_orders'[Profit Amount] )
-Total Units Sold = SUM ( 'fact_orders'[Quantity] )
-Total Orders = DISTINCTCOUNT ( 'fact_orders'[Order ID] )
-Avg. Fulfillment Days = AVERAGE ( 'fact_orders'[Fulfillment Days] )
 
+Total Profit = SUM ( 'fact_orders'[Profit Amount] )
+
+Total Units Sold = SUM ( 'fact_orders'[Quantity] )
+
+Total Orders = DISTINCTCOUNT ( 'fact_orders'[Order ID] )
+
+Avg. Fulfillment Days = AVERAGE ( 'fact_orders'[Fulfillment Days] )
 
 ---
 
-## 4. Dashboard Architecture & User Experience
-
-
+## ** 4.  Dashboard Architecture & User Experience **
 Executive KPI Header: High-level cards across the top for immediate executive visibility into high-level performance metrics.
 
 Interactive Control Panel: Top-right Region dropdown slicer powered by dim_stores, enabling cross-filtering across all canvas visuals.
@@ -41,5 +42,3 @@ Interactive Control Panel: Top-right Region dropdown slicer powered by dim_store
 Category Performance Breakdown: Horizontal bar chart comparing product performance to quickly highlight top-performing categories.
 
 Sales Velocity Trend: Time-series line chart tracking revenue growth month-over-month using standardized Month Year formatting.
-
-
