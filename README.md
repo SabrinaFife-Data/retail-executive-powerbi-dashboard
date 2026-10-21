@@ -31,6 +31,8 @@ Avg. Fulfillment Days = AVERAGE ( 'fact_orders'[Fulfillment Days] )
 
 
 ## 4. Dashboard Architecture & User Experience
+
+```dax
 Executive KPI Header: High-level cards across the top for immediate executive visibility into high-level performance metrics.
 
 Interactive Control Panel: Top-right Region dropdown slicer powered by dim_stores, enabling cross-filtering across all canvas visuals.
