@@ -42,4 +42,4 @@ Category Performance Breakdown: Horizontal bar chart comparing product performan
 
 Sales Velocity Trend: Time-series line chart tracking revenue growth month-over-month using standardized Month Year formatting.
 
----
+
